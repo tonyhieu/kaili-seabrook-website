@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --bg-color: #FFF2F4;
+  --main-text-color: #7B0828;
+  --secondary-text-color: #FC440F;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-size: 1.5rem;
+}
+
+p, span, a, h2 {
+  color: var(--main-text-color);
+}
+
+h2 {
+  font-weight: 700;
+}
+
+a, a:visited, a:hover {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-areas: "logo links free-space";
+  margin-top: 0.5em;
+}
+nav .nav-logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav .nav-logo img {
+  max-width: 6em;
+  max-height: 6em;
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+}
+nav .nav-logo .name {
+  text-align: center;
+}
+nav .nav-logo .flavorText {
+  color: var(--secondary-text-color);
+  font-size: 0.5em;
+}
+nav .nav-links {
+  grid-area: links;
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-evenly;
+  font-size: 2em;
+}
+
+main {
+  opacity: 0;
+  animation: fadeIn ease 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=default.css.map */

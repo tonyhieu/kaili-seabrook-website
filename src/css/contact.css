@@ -1,0 +1,27 @@
+.default .contact {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5em;
+}
+.default .contact h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.default .contact .info-line {
+  font-size: 1.5em;
+  display: block;
+  margin-bottom: 0.4em;
+}
+.default .contact .info-line .fa-twitter, .default .contact .info-line .fa-envelope {
+  margin-right: 0.25em;
+}
+.default .contact .info-line .fa-deviantart {
+  margin-right: 0.6em;
+}
+.default .contact .fa-twitter, .default .contact .fa-envelope, .default .contact .fa-deviantart {
+  color: var(--main-text-color);
+}/*# sourceMappingURL=contact.css.map */

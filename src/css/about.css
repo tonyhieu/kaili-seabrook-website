@@ -1,0 +1,14 @@
+.default .about .text-summary {
+  max-width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2em;
+}
+.default .about .text-summary h2 {
+  font-size: 1.5em;
+}
+.default .about .text-summary p {
+  font-size: 1em;
+}/*# sourceMappingURL=about.css.map */

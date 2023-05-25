@@ -1,0 +1,32 @@
+.default .contact {
+    width: fit-content;
+    height: fit-content;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    margin-top: 5em;
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .info-line {
+        font-size: 1.5em;
+        display: block;
+
+        margin-bottom: 0.4em;
+        
+        .fa-twitter, .fa-envelope {
+            margin-right: 0.25em;
+        }
+        .fa-deviantart {
+            margin-right: 0.6em;
+        }
+    }
+
+    .fa-twitter, .fa-envelope, .fa-deviantart {
+        color: var(--main-text-color);
+    }
+}

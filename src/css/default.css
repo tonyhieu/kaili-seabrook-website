@@ -39,7 +39,8 @@ nav {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-areas: "logo links free-space";
-  margin-top: 0.5em;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
 }
 nav .nav-logo {
   grid-area: logo;
@@ -48,39 +49,25 @@ nav .nav-logo {
   flex-wrap: wrap;
 }
 nav .nav-logo img {
-  max-width: 6em;
-  max-height: 6em;
+  max-width: 8vw;
+  max-height: 8vw;
   width: auto;
   height: auto;
   border-radius: 50%;
 }
 nav .nav-logo .name {
+  font-size: 1.3vw;
   text-align: center;
 }
 nav .nav-logo .flavorText {
   color: var(--secondary-text-color);
-  font-size: 0.5em;
+  font-size: 0.6vw;
 }
 nav .nav-links {
+  margin-top: auto;
+  margin-bottom: auto;
   grid-area: links;
   display: flex;
-  margin-top: 1em;
   justify-content: space-evenly;
-  font-size: 2em;
-}
-
-main {
-  opacity: 0;
-  animation: fadeIn ease 1s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  font-size: 2.5vw;
 }/*# sourceMappingURL=default.css.map */

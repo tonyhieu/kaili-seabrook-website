@@ -1,11 +1,6 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-    const handleLoad = (link) => {
-        useNavigate(link);
-    }
-
     return (
         <nav>
             <div className="nav-logo">
@@ -17,7 +12,6 @@ const Navbar = () => {
             <div className="nav-links">
                 <a href="/about">About</a>
                 <a href="/contact">Contact</a>
-                <a href="/search">Search</a>
             </div>
         </nav>
     )

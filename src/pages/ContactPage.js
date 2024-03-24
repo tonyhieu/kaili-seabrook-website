@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../fragments/Navbar.jsx';
 
 import '../css/default.css';
 import '../css/contact.css';
@@ -11,11 +10,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 function Contact() {
     return (
         <div className="default">
-            <header>
-                <Navbar />
-            </header>
-
-            <main class="contact">
+            <main className="contact">
                 <h2>Contact Information</h2>
                 <span class="info-line"><FontAwesomeIcon icon={faEnvelope} /> <span>test@gmail.com</span></span>
                 <span class="info-line"><FontAwesomeIcon icon={faTwitter} /> <span>@ratgmtf</span></span>

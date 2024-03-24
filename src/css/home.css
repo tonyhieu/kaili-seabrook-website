@@ -1,1 +1,104 @@
-/*# sourceMappingURL=home.css.map */
+.model {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 999;
+}
+.model .model-piece {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "image metadata";
+}
+.model .model-piece .image-col {
+  grid-area: image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.model .model-piece .image-col img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 40vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 20px 20px 20px 20px;
+  margin: 0 auto;
+}
+.model .model-piece .metadata-col {
+  height: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  grid-area: metadata;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.model .model-piece .metadata-col p {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
+  font-size: 2vw;
+}
+
+.model.open {
+  visibility: visible;
+  opacity: 1;
+}
+.model.open .fa-x {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.gallery {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  -moz-column-count: 3;
+       column-count: 3;
+  padding: 0 12px;
+}
+.gallery .piece-card {
+  transition: all 350ms ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.gallery .piece-card:hover {
+  filter: opacity(0.8);
+}
+
+@media (max-width: 991px) {
+  .default .home .gallery {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+}
+@media (max-width: 480px) {
+  .default .home .gallery {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+}/*# sourceMappingURL=home.css.map */

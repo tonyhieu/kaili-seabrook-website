@@ -38,10 +38,13 @@ nav {
     height: fit-content;
     position: relative;
     display: grid;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 5fr 1fr;
-    grid-template-areas: "logo links free-space";
-    margin-top: 0.5vh;
-    margin-bottom: 0.5vh;
+    grid-template-areas: 
+        ". name ."
+        "logo links .";
+    margin-top: 0.6vh;
+    margin-bottom: 0.6vh;
 
     .nav-logo {
         grid-area: logo;
@@ -50,22 +53,22 @@ nav {
         flex-wrap: wrap;
 
         img {
-            max-width: 8vw;
-            max-height: 8vw;
+            max-width: 5vw;
+            max-height: 5vw;
             width: auto;
             height: auto;
             border-radius: 50%;
         }
 
-        .name {
-            font-size: 1.3vw;
-            text-align: center;
-        }
+        // .name {
+        //     font-size: 1.3vw;
+        //     text-align: center;
+        // }
 
-        .flavorText {
-            color: var(--secondary-text-color);
-            font-size: 0.6vw;
-        }
+        // .flavorText {
+        //     color: var(--secondary-text-color);
+        //     font-size: 0.6vw;
+        // }
     }
 
     .nav-links {
@@ -77,5 +80,27 @@ nav {
         justify-content: space-evenly;
 
         font-size: 2.5vw;
+    }
+
+    .nav-title {
+        grid-area: name;
+        width: 100%;
+
+        .name {
+            width: 100%;
+            font-size: 3.5vw;
+            text-align: center;
+
+            display: table;
+            margin: 0 auto;
+        }
+
+        .flavorText {
+            color: var(--secondary-text-color);
+            font-size: 1.5vw;
+
+            display: table;
+            margin: 0 auto;
+        }
     }
 }

@@ -13,7 +13,7 @@ function TwoD() {
     const [model, setModel] = useState(false);
     const [modelData, setModelData] = useState('');
 
-    const url = "http://127.0.0.1:5001/kaili-seabrook-site/us-central1/app/api/getPieces/2d";
+    const url = "https://us-central1-kaili-seabrook-site.cloudfunctions.net/app/api/getPieces/2d";
     const requestOptions = {
         method: 'GET',
         redirect: 'follow'

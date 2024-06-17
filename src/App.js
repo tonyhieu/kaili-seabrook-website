@@ -29,7 +29,7 @@ function App() {
             <Routes location={location} key={location.pathname}>
               <Route index element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
-              <Route path="/contact" element={<ContactPage />} />
+              {/* <Route path="/contact" element={<ContactPage />} /> */}
               <Route path="/2d" element={<TwoDPage />} />
               <Route path="/3d" element={<ThreeDPage />} />
               <Route path="/concept" element={<ConceptPage />} />

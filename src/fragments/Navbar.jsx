@@ -19,7 +19,7 @@ const Navbar = () => {
                 <a href="/3d">3D</a>
                 <a href="/concept">Concept</a>
                 <a href="/about">About</a>
-                <a href="/contact">Contact</a>
+                {/* <a href="/contact">Contact</a> */}
             </div>
         </nav>
     )

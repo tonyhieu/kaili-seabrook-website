@@ -13,7 +13,7 @@ function About() {
             <main className="about">
                 <div className="text-summary">
                     <h2>Kaili Seabrook</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris. Sed turpis tincidunt id aliquet risus feugiat in ante metus. Et egestas quis ipsum suspendisse ultrices gravida. Amet dictum sit amet justo donec enim. Libero id faucibus nisl tincidunt eget nullam non nisi. Vel orci porta non pulvinar neque laoreet suspendisse. Facilisi cras fermentum odio eu feugiat pretium. Scelerisque in dictum non consectetur a erat nam at lectus. Pretium vulputate sapien nec sagittis aliquam. Fusce id velit ut tortor pretium viverra suspendisse potenti. Sapien pellentesque habitant morbi tristique. Eu feugiat pretium nibh ipsum consequat. At varius vel pharetra vel turpis nunc eget lorem dolor.</p>
+                    <p>Hi there! My name is Kaili and I'm an artist based in Southern California as well as a current student at Laguna College of Art and Design studying in their Game Art Program! I love making characters and doing 3D art, but aside from art you can find me studying marine biology or possibly cafe hopping :)</p>
                 </div>
 
                 <div className="text-summary">
